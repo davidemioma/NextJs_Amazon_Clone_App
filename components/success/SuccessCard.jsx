@@ -21,7 +21,9 @@ const SuccessCard = () => {
           the link below
         </p>
 
-        <button onClick={() => router.push("/")}>Continue Shopping</button>
+        <button type="button" onClick={() => router.push("/")}>
+          Continue Shopping
+        </button>
       </div>
     </div>
   );
