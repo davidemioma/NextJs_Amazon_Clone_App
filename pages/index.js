@@ -4,6 +4,7 @@ import ProductFeed from "../components/products/ProductsFeed";
 import axios from "axios";
 
 const Home = ({ products }) => {
+  console.log(products);
   return (
     <div className="container">
       <Banner />
@@ -19,9 +20,7 @@ export const getServerSideProps = async (context) => {
     .then((res) => res.data);
 
   return {
-    props: {
-      products,
-    },
+    props: { products },
   };
 };
 

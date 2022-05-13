@@ -37,8 +37,8 @@ const OrderItem = ({
       </div>
 
       <div className={classes.images}>
-        {images.map((img) => (
-          <img src={img} alt="" />
+        {images.map((img, i) => (
+          <img key={i} src={img} alt="" />
         ))}
       </div>
     </div>
