@@ -1,0 +1,43 @@
+.container {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+}
+
+.card {
+  padding: 1rem;
+  background: #fff;
+  width: 700px;
+}
+
+.card div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card p {
+  margin: 0.5rem 0;
+}
+
+.card button {
+  background-image: linear-gradient(#ffe033 25%, #ffdd1a 50%, #ffe866 100%);
+  width: 100%;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.card button:hover {
+  background-image: linear-gradient(#ffdd1a 25%, #ffd700 50%, #e6c300 100%);
+}
+
+@media screen and (max-width: 750px) {
+  .card {
+    width: 90%;
+  }
+}

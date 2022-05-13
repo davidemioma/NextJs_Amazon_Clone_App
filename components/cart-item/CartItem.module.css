@@ -1,0 +1,109 @@
+.item {
+  display: grid;
+  justify-items: center;
+  margin-bottom: 1rem;
+}
+
+.item img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 0.5rem;
+  object-fit: contain;
+}
+
+.description {
+  height: 32px;
+  font-size: 0.8rem;
+  margin: 0.5rem 0;
+  font-weight: bold;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.quantity {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.ratings {
+  display: flex;
+  align-items: center;
+}
+
+.price {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.title {
+  margin-bottom: 0.3rem;
+}
+
+.prime {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.item .prime img {
+  width: 40px;
+  height: 40px;
+}
+
+.prime p {
+  font-size: 0.8rem;
+  color: #b3b3b3;
+}
+
+.buttons {
+  margin: 0.5rem;
+  width: 50%;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.buttons button {
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  border: none;
+  outline: none;
+  background-image: linear-gradient(#ffe033 25%, #ffdd1a 50%, #ffe866 100%);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.buttons button:hover {
+  background-image: linear-gradient(#ffdd1a 25%, #ffd700 50%, #e6c300 100%);
+}
+
+@media screen and (max-width: 375px) {
+  .item img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .buttons {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .item {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0 1rem;
+    align-items: center;
+  }
+
+  .content {
+    grid-column: span 3;
+  }
+
+  .buttons {
+    width: 100%;
+  }
+}

@@ -1,0 +1,91 @@
+.orders {
+  padding: 0 1rem;
+}
+
+.orders h2 {
+  margin-top: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #ffe033;
+}
+
+.amount,
+.items_amount {
+  padding: 1rem 0;
+  font-weight: bold;
+}
+
+.order_list {
+  margin-bottom: 2rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.container {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.info {
+  background: #e6e6e6;
+  padding: 1rem;
+  position: relative;
+}
+
+.info p {
+  font-size: 0.8rem;
+}
+
+.order {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+}
+
+.items {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+.items .items_amount {
+  color: #6666ff;
+  font-size: 1.3rem;
+  white-space: nowrap;
+}
+
+.images {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  overflow-x: scroll;
+}
+
+.images img {
+  width: 100px;
+  height: 100px;
+}
+
+@media screen and (max-width: 763px) {
+  .order {
+    width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .items .items_amount {
+    font-size: 0.9rem;
+  }
+}

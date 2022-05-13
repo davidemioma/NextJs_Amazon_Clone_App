@@ -1,0 +1,17 @@
+.banner {
+  position: relative;
+}
+
+.gradient {
+  position: absolute;
+  bottom: 0;
+  z-index: 20;
+  width: 100%;
+  height: 7.4rem;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(37, 37, 37, 0.7),
+    #a6a6a6
+  );
+}
