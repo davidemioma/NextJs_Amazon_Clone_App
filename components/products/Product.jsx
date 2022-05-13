@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { StarIcon } from "@heroicons/react/solid";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../store/store";
+import Image from "next/image";
 import classes from "./Products.module.css";
 
 const Product = ({ id, title, price, description, category, image }) => {
@@ -31,7 +32,13 @@ const Product = ({ id, title, price, description, category, image }) => {
     <div className={classes.item}>
       <p className={classes.category}>{category}</p>
 
-      <img src={image} alt="product image" />
+      <Image
+        src={image}
+        alt="product image"
+        width={200}
+        height={200}
+        objectFit="contain"
+      />
 
       <h4 className={classes.title}>{title}</h4>
 

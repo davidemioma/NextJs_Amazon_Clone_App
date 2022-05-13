@@ -4,11 +4,8 @@
   margin-bottom: 1rem;
 }
 
-.item img {
-  width: 200px;
-  height: 200px;
-  margin-bottom: 0.5rem;
-  object-fit: contain;
+.content {
+  margin-top: 0.5rem;
 }
 
 .description {

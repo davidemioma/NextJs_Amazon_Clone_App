@@ -22,6 +22,7 @@ const Header = () => {
         <img
           onClick={() => router.push("/")}
           src="https://links.papareact.com/f90"
+          alt=""
         />
 
         <div className={classes.inputs}>

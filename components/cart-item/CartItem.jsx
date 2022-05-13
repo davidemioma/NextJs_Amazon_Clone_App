@@ -2,6 +2,7 @@ import React from "react";
 import { StarIcon } from "@heroicons/react/solid";
 import { useDispatch } from "react-redux";
 import { addToCart, removeFromCart } from "../../store/store";
+import Image from "next/image";
 import classes from "./CartItem.module.css";
 
 const CartItem = ({
@@ -39,7 +40,13 @@ const CartItem = ({
 
   return (
     <div className={classes.item}>
-      <img src={image} alt="" />
+      <Image
+        src={image}
+        alt="cart-img"
+        width={200}
+        height={200}
+        objectFit="contain"
+      />
 
       <div className={classes.content}>
         <p className={classes.title}>{title}</p>
