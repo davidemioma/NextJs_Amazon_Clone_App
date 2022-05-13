@@ -5,7 +5,7 @@ import classes from "./Products.module.css";
 const ProductsFeed = ({ products }) => {
   return (
     <div className={classes.products}>
-      {products.slice(0, 4).map((item) => (
+      {products?.slice(0, 4).map((item) => (
         <Product
           key={item.id}
           id={item.id}
@@ -24,7 +24,7 @@ const ProductsFeed = ({ products }) => {
       />
 
       <div className={classes.span_two}>
-        {products.slice(4, 5).map((item) => (
+        {products?.slice(4, 5).map((item) => (
           <Product
             key={item.id}
             id={item.id}
@@ -37,7 +37,7 @@ const ProductsFeed = ({ products }) => {
         ))}
       </div>
 
-      {products.slice(5, products.length).map((item) => (
+      {products?.slice(5, products.length).map((item) => (
         <Product
           key={item.id}
           id={item.id}

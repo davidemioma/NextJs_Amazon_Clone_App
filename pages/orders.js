@@ -9,8 +9,8 @@ import OrderItem from "../components/orders/OrderItem";
 const orders = ({ orders }) => {
   return (
     <div className="container">
-      <OrderList amount={orders.length}>
-        {orders.map(
+      <OrderList amount={orders?.length}>
+        {orders?.map(
           ({ id, amount, amountShipping, images, timestamp, items }) => (
             <OrderItem
               key={id}

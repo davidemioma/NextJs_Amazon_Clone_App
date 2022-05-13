@@ -1,6 +1,6 @@
 import React from "react";
 import Banner from "../components/banner/Banner";
-import ProductsFeed from "../components/products/ProductsFeed";
+import ProductFeed from "../components/products/ProductsFeed";
 import axios from "axios";
 
 const Home = ({ products }) => {
@@ -8,7 +8,7 @@ const Home = ({ products }) => {
     <div className="container">
       <Banner />
 
-      <ProductsFeed products={products} />
+      <ProductFeed products={products} />
     </div>
   );
 };
